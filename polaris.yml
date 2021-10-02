@@ -1,0 +1,17 @@
+version: "1"
+serverUrl: https://sipse.polaris.synopsys.com
+install:
+  coverity:
+    version: latest
+project:
+  name: "SIG Employee Store - SSDC"
+  branch: ${scm.git.branch}
+  revision:
+    name: ${scm.git.commit}
+    date: ${scm.git.commit.date}
+capture:
+  fileSystem:
+    javascript:
+      files:
+      - directory: ${project.projectDir}
+      - excludeRegex: node_modules
