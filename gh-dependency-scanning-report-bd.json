@@ -2027,7 +2027,7 @@
             "tool": {
                 "driver": {
                     "name": "Synopsys Black Duck Report",
-                    "orgnization": "Synopsys",
+                    "organization": "Synopsys",
                     "rules": [
                         {
                             "id": "CVE-2021-23369",
