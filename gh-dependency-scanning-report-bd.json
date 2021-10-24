@@ -3,6 +3,236 @@
         {
             "results": [
                 {
+                    "ruleId": "CVE-2020-28503",
+                    "message": {
+                        "text": "The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-28503 version 2.0.5."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23438",
+                    "message": {
+                        "text": "This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23438 version 65195b08111f516387f2ee4d13a70fadf7935d20."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2020-7769",
+                    "message": {
+                        "text": "This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-7769 version v6.7.0."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23440",
+                    "message": {
+                        "text": "This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23440 version 4.1.0."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2020-7610",
+                    "message": {
+                        "text": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-7610 version 4.5.3."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "ruleId": "CVE-2021-23369",
                     "message": {
                         "text": "The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
@@ -100,6 +330,2276 @@
                     "name": "Synopsys Black Duck Report",
                     "organization": "Synopsys",
                     "rules": [
+                        {
+                            "id": "CVE-2020-28503",
+                            "shortDescription": {
+                                "text": "CVE-2020-28503"
+                            },
+                            "fullDescription": {
+                                "text": "The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23438",
+                            "shortDescription": {
+                                "text": "CVE-2021-23438"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2020-7769",
+                            "shortDescription": {
+                                "text": "CVE-2020-7769"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23440",
+                            "shortDescription": {
+                                "text": "CVE-2021-23440"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2020-7610",
+                            "shortDescription": {
+                                "text": "CVE-2020-7610"
+                            },
+                            "fullDescription": {
+                                "text": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23369",
+                            "shortDescription": {
+                                "text": "CVE-2021-23369"
+                            },
+                            "fullDescription": {
+                                "text": "The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23383",
+                            "shortDescription": {
+                                "text": "CVE-2021-23383"
+                            },
+                            "fullDescription": {
+                                "text": "The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "results": [
+                {
+                    "ruleId": "CVE-2020-28503",
+                    "message": {
+                        "text": "The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-28503 version 2.0.5."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23438",
+                    "message": {
+                        "text": "This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23438 version 65195b08111f516387f2ee4d13a70fadf7935d20."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2020-7769",
+                    "message": {
+                        "text": "This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-7769 version v6.7.0."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23440",
+                    "message": {
+                        "text": "This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23440 version 4.1.0."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2020-7610",
+                    "message": {
+                        "text": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-7610 version 4.5.3."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23369",
+                    "message": {
+                        "text": "The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23369 version 4.7.7."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23383",
+                    "message": {
+                        "text": "The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23383 version 4.7.7."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "Synopsys Black Duck Report",
+                    "organization": "Synopsys",
+                    "rules": [
+                        {
+                            "id": "CVE-2020-28503",
+                            "shortDescription": {
+                                "text": "CVE-2020-28503"
+                            },
+                            "fullDescription": {
+                                "text": "The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23438",
+                            "shortDescription": {
+                                "text": "CVE-2021-23438"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2020-7769",
+                            "shortDescription": {
+                                "text": "CVE-2020-7769"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23440",
+                            "shortDescription": {
+                                "text": "CVE-2021-23440"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2020-7610",
+                            "shortDescription": {
+                                "text": "CVE-2020-7610"
+                            },
+                            "fullDescription": {
+                                "text": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23369",
+                            "shortDescription": {
+                                "text": "CVE-2021-23369"
+                            },
+                            "fullDescription": {
+                                "text": "The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23383",
+                            "shortDescription": {
+                                "text": "CVE-2021-23383"
+                            },
+                            "fullDescription": {
+                                "text": "The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "results": [
+                {
+                    "ruleId": "CVE-2020-28503",
+                    "message": {
+                        "text": "The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-28503 version 2.0.5."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23438",
+                    "message": {
+                        "text": "This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23438 version 65195b08111f516387f2ee4d13a70fadf7935d20."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2020-7769",
+                    "message": {
+                        "text": "This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-7769 version v6.7.0."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23440",
+                    "message": {
+                        "text": "This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23440 version 4.1.0."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2020-7610",
+                    "message": {
+                        "text": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-7610 version 4.5.3."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23369",
+                    "message": {
+                        "text": "The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23369 version 4.7.7."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23383",
+                    "message": {
+                        "text": "The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23383 version 4.7.7."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "Synopsys Black Duck Report",
+                    "organization": "Synopsys",
+                    "rules": [
+                        {
+                            "id": "CVE-2020-28503",
+                            "shortDescription": {
+                                "text": "CVE-2020-28503"
+                            },
+                            "fullDescription": {
+                                "text": "The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23438",
+                            "shortDescription": {
+                                "text": "CVE-2021-23438"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2020-7769",
+                            "shortDescription": {
+                                "text": "CVE-2020-7769"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23440",
+                            "shortDescription": {
+                                "text": "CVE-2021-23440"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2020-7610",
+                            "shortDescription": {
+                                "text": "CVE-2020-7610"
+                            },
+                            "fullDescription": {
+                                "text": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23369",
+                            "shortDescription": {
+                                "text": "CVE-2021-23369"
+                            },
+                            "fullDescription": {
+                                "text": "The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23383",
+                            "shortDescription": {
+                                "text": "CVE-2021-23383"
+                            },
+                            "fullDescription": {
+                                "text": "The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "results": [
+                {
+                    "ruleId": "CVE-2020-28503",
+                    "message": {
+                        "text": "The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-28503 version 2.0.5."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23438",
+                    "message": {
+                        "text": "This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23438 version 65195b08111f516387f2ee4d13a70fadf7935d20."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2020-7769",
+                    "message": {
+                        "text": "This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-7769 version v6.7.0."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23440",
+                    "message": {
+                        "text": "This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23440 version 4.1.0."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2020-7610",
+                    "message": {
+                        "text": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-7610 version 4.5.3."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23369",
+                    "message": {
+                        "text": "The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23369 version 4.7.7."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23383",
+                    "message": {
+                        "text": "The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23383 version 4.7.7."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "Synopsys Black Duck Report",
+                    "organization": "Synopsys",
+                    "rules": [
+                        {
+                            "id": "CVE-2020-28503",
+                            "shortDescription": {
+                                "text": "CVE-2020-28503"
+                            },
+                            "fullDescription": {
+                                "text": "The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23438",
+                            "shortDescription": {
+                                "text": "CVE-2021-23438"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2020-7769",
+                            "shortDescription": {
+                                "text": "CVE-2020-7769"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23440",
+                            "shortDescription": {
+                                "text": "CVE-2021-23440"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2020-7610",
+                            "shortDescription": {
+                                "text": "CVE-2020-7610"
+                            },
+                            "fullDescription": {
+                                "text": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23369",
+                            "shortDescription": {
+                                "text": "CVE-2021-23369"
+                            },
+                            "fullDescription": {
+                                "text": "The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23383",
+                            "shortDescription": {
+                                "text": "CVE-2021-23383"
+                            },
+                            "fullDescription": {
+                                "text": "The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "results": [
+                {
+                    "ruleId": "CVE-2020-28503",
+                    "message": {
+                        "text": "The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-28503 version 2.0.5."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23438",
+                    "message": {
+                        "text": "This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23438 version 65195b08111f516387f2ee4d13a70fadf7935d20."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2020-7769",
+                    "message": {
+                        "text": "This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-7769 version v6.7.0."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23440",
+                    "message": {
+                        "text": "This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23440 version 4.1.0."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2020-7610",
+                    "message": {
+                        "text": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-7610 version 4.5.3."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23369",
+                    "message": {
+                        "text": "The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23369 version 4.7.7."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23383",
+                    "message": {
+                        "text": "The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23383 version 4.7.7."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "Synopsys Black Duck Report",
+                    "organization": "Synopsys",
+                    "rules": [
+                        {
+                            "id": "CVE-2020-28503",
+                            "shortDescription": {
+                                "text": "CVE-2020-28503"
+                            },
+                            "fullDescription": {
+                                "text": "The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23438",
+                            "shortDescription": {
+                                "text": "CVE-2021-23438"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2020-7769",
+                            "shortDescription": {
+                                "text": "CVE-2020-7769"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23440",
+                            "shortDescription": {
+                                "text": "CVE-2021-23440"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2020-7610",
+                            "shortDescription": {
+                                "text": "CVE-2020-7610"
+                            },
+                            "fullDescription": {
+                                "text": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23369",
+                            "shortDescription": {
+                                "text": "CVE-2021-23369"
+                            },
+                            "fullDescription": {
+                                "text": "The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23383",
+                            "shortDescription": {
+                                "text": "CVE-2021-23383"
+                            },
+                            "fullDescription": {
+                                "text": "The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "results": [
+                {
+                    "ruleId": "CVE-2020-28503",
+                    "message": {
+                        "text": "The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-28503 version 2.0.5."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23438",
+                    "message": {
+                        "text": "This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23438 version 65195b08111f516387f2ee4d13a70fadf7935d20."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2020-7769",
+                    "message": {
+                        "text": "This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-7769 version v6.7.0."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23440",
+                    "message": {
+                        "text": "This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23440 version 4.1.0."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2020-7610",
+                    "message": {
+                        "text": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2020-7610 version 4.5.3."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23369",
+                    "message": {
+                        "text": "The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23369 version 4.7.7."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "CVE-2021-23383",
+                    "message": {
+                        "text": "The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "partialFingerprints": {
+                        "primaryLocationLineHash": "ea2a5f10c1de4dc47874b852b417661b43fdd7b28ff06049b326fa40"
+                    },
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "package-lock.json"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Remediation advice: Upgrade to CVE-2021-23383 version 4.7.7."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "Synopsys Black Duck Report",
+                    "organization": "Synopsys",
+                    "rules": [
+                        {
+                            "id": "CVE-2020-28503",
+                            "shortDescription": {
+                                "text": "CVE-2020-28503"
+                            },
+                            "fullDescription": {
+                                "text": "The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23438",
+                            "shortDescription": {
+                                "text": "CVE-2021-23438"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2020-7769",
+                            "shortDescription": {
+                                "text": "CVE-2020-7769"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2021-23440",
+                            "shortDescription": {
+                                "text": "CVE-2021-23440"
+                            },
+                            "fullDescription": {
+                                "text": "This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
+                        {
+                            "id": "CVE-2020-7610",
+                            "shortDescription": {
+                                "text": "CVE-2020-7610"
+                            },
+                            "fullDescription": {
+                                "text": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            },
+                            "properties": {
+                                "tags": []
+                            }
+                        },
                         {
                             "id": "CVE-2021-23369",
                             "shortDescription": {
