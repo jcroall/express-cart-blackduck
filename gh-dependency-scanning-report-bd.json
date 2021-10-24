@@ -158,14 +158,14 @@
                         {
                             "id": "CVE-2020-28503",
                             "shortDescription": {
-                                "text": "CVE-2020-28503"
+                                "text": "CVE-2020-28503 - CRITICAL severity vulnerability in copy-props"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in copy-props"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -177,14 +177,14 @@
                         {
                             "id": "CVE-2021-23438",
                             "shortDescription": {
-                                "text": "CVE-2021-23438"
+                                "text": "CVE-2021-23438 - CRITICAL severity vulnerability in mpath"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in mpath"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                                "markdown": "*This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -196,14 +196,14 @@
                         {
                             "id": "CVE-2020-7769",
                             "shortDescription": {
-                                "text": "CVE-2020-7769"
+                                "text": "CVE-2020-7769 - CRITICAL severity vulnerability in Nodemailer"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Nodemailer"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                                "markdown": "*This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -215,14 +215,14 @@
                         {
                             "id": "CVE-2021-23440",
                             "shortDescription": {
-                                "text": "CVE-2021-23440"
+                                "text": "CVE-2021-23440 - CRITICAL severity vulnerability in set-value"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in set-value"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                                "markdown": "*This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -234,14 +234,14 @@
                         {
                             "id": "CVE-2020-7610",
                             "shortDescription": {
-                                "text": "CVE-2020-7610"
+                                "text": "CVE-2020-7610 - CRITICAL severity vulnerability in js-bson"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in js-bson"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                                "markdown": "*All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -253,14 +253,14 @@
                         {
                             "id": "CVE-2021-23369",
                             "shortDescription": {
-                                "text": "CVE-2021-23369"
+                                "text": "CVE-2021-23369 - CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -272,14 +272,14 @@
                         {
                             "id": "CVE-2021-23383",
                             "shortDescription": {
-                                "text": "CVE-2021-23383"
+                                "text": "CVE-2021-23383 - CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -450,14 +450,14 @@
                         {
                             "id": "CVE-2020-28503",
                             "shortDescription": {
-                                "text": "CVE-2020-28503"
+                                "text": "CVE-2020-28503 - CRITICAL severity vulnerability in copy-props"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in copy-props"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -469,14 +469,14 @@
                         {
                             "id": "CVE-2021-23438",
                             "shortDescription": {
-                                "text": "CVE-2021-23438"
+                                "text": "CVE-2021-23438 - CRITICAL severity vulnerability in mpath"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in mpath"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                                "markdown": "*This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -488,14 +488,14 @@
                         {
                             "id": "CVE-2020-7769",
                             "shortDescription": {
-                                "text": "CVE-2020-7769"
+                                "text": "CVE-2020-7769 - CRITICAL severity vulnerability in Nodemailer"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Nodemailer"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                                "markdown": "*This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -507,14 +507,14 @@
                         {
                             "id": "CVE-2021-23440",
                             "shortDescription": {
-                                "text": "CVE-2021-23440"
+                                "text": "CVE-2021-23440 - CRITICAL severity vulnerability in set-value"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in set-value"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                                "markdown": "*This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -526,14 +526,14 @@
                         {
                             "id": "CVE-2020-7610",
                             "shortDescription": {
-                                "text": "CVE-2020-7610"
+                                "text": "CVE-2020-7610 - CRITICAL severity vulnerability in js-bson"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in js-bson"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                                "markdown": "*All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -545,14 +545,14 @@
                         {
                             "id": "CVE-2021-23369",
                             "shortDescription": {
-                                "text": "CVE-2021-23369"
+                                "text": "CVE-2021-23369 - CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -564,14 +564,14 @@
                         {
                             "id": "CVE-2021-23383",
                             "shortDescription": {
-                                "text": "CVE-2021-23383"
+                                "text": "CVE-2021-23383 - CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -742,14 +742,14 @@
                         {
                             "id": "CVE-2020-28503",
                             "shortDescription": {
-                                "text": "CVE-2020-28503"
+                                "text": "CVE-2020-28503 - CRITICAL severity vulnerability in copy-props"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in copy-props"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -761,14 +761,14 @@
                         {
                             "id": "CVE-2021-23438",
                             "shortDescription": {
-                                "text": "CVE-2021-23438"
+                                "text": "CVE-2021-23438 - CRITICAL severity vulnerability in mpath"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in mpath"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                                "markdown": "*This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -780,14 +780,14 @@
                         {
                             "id": "CVE-2020-7769",
                             "shortDescription": {
-                                "text": "CVE-2020-7769"
+                                "text": "CVE-2020-7769 - CRITICAL severity vulnerability in Nodemailer"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Nodemailer"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                                "markdown": "*This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -799,14 +799,14 @@
                         {
                             "id": "CVE-2021-23440",
                             "shortDescription": {
-                                "text": "CVE-2021-23440"
+                                "text": "CVE-2021-23440 - CRITICAL severity vulnerability in set-value"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in set-value"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                                "markdown": "*This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -818,14 +818,14 @@
                         {
                             "id": "CVE-2020-7610",
                             "shortDescription": {
-                                "text": "CVE-2020-7610"
+                                "text": "CVE-2020-7610 - CRITICAL severity vulnerability in js-bson"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in js-bson"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                                "markdown": "*All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -837,14 +837,14 @@
                         {
                             "id": "CVE-2021-23369",
                             "shortDescription": {
-                                "text": "CVE-2021-23369"
+                                "text": "CVE-2021-23369 - CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -856,14 +856,14 @@
                         {
                             "id": "CVE-2021-23383",
                             "shortDescription": {
-                                "text": "CVE-2021-23383"
+                                "text": "CVE-2021-23383 - CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1034,14 +1034,14 @@
                         {
                             "id": "CVE-2020-28503",
                             "shortDescription": {
-                                "text": "CVE-2020-28503"
+                                "text": "CVE-2020-28503 - CRITICAL severity vulnerability in copy-props"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in copy-props"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1053,14 +1053,14 @@
                         {
                             "id": "CVE-2021-23438",
                             "shortDescription": {
-                                "text": "CVE-2021-23438"
+                                "text": "CVE-2021-23438 - CRITICAL severity vulnerability in mpath"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in mpath"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                                "markdown": "*This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1072,14 +1072,14 @@
                         {
                             "id": "CVE-2020-7769",
                             "shortDescription": {
-                                "text": "CVE-2020-7769"
+                                "text": "CVE-2020-7769 - CRITICAL severity vulnerability in Nodemailer"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Nodemailer"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                                "markdown": "*This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1091,14 +1091,14 @@
                         {
                             "id": "CVE-2021-23440",
                             "shortDescription": {
-                                "text": "CVE-2021-23440"
+                                "text": "CVE-2021-23440 - CRITICAL severity vulnerability in set-value"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in set-value"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                                "markdown": "*This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1110,14 +1110,14 @@
                         {
                             "id": "CVE-2020-7610",
                             "shortDescription": {
-                                "text": "CVE-2020-7610"
+                                "text": "CVE-2020-7610 - CRITICAL severity vulnerability in js-bson"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in js-bson"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                                "markdown": "*All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1129,14 +1129,14 @@
                         {
                             "id": "CVE-2021-23369",
                             "shortDescription": {
-                                "text": "CVE-2021-23369"
+                                "text": "CVE-2021-23369 - CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1148,14 +1148,14 @@
                         {
                             "id": "CVE-2021-23383",
                             "shortDescription": {
-                                "text": "CVE-2021-23383"
+                                "text": "CVE-2021-23383 - CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1326,14 +1326,14 @@
                         {
                             "id": "CVE-2020-28503",
                             "shortDescription": {
-                                "text": "CVE-2020-28503"
+                                "text": "CVE-2020-28503 - CRITICAL severity vulnerability in copy-props"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in copy-props"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1345,14 +1345,14 @@
                         {
                             "id": "CVE-2021-23438",
                             "shortDescription": {
-                                "text": "CVE-2021-23438"
+                                "text": "CVE-2021-23438 - CRITICAL severity vulnerability in mpath"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in mpath"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                                "markdown": "*This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1364,14 +1364,14 @@
                         {
                             "id": "CVE-2020-7769",
                             "shortDescription": {
-                                "text": "CVE-2020-7769"
+                                "text": "CVE-2020-7769 - CRITICAL severity vulnerability in Nodemailer"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Nodemailer"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                                "markdown": "*This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1383,14 +1383,14 @@
                         {
                             "id": "CVE-2021-23440",
                             "shortDescription": {
-                                "text": "CVE-2021-23440"
+                                "text": "CVE-2021-23440 - CRITICAL severity vulnerability in set-value"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in set-value"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                                "markdown": "*This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1402,14 +1402,14 @@
                         {
                             "id": "CVE-2020-7610",
                             "shortDescription": {
-                                "text": "CVE-2020-7610"
+                                "text": "CVE-2020-7610 - CRITICAL severity vulnerability in js-bson"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in js-bson"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                                "markdown": "*All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1421,14 +1421,14 @@
                         {
                             "id": "CVE-2021-23369",
                             "shortDescription": {
-                                "text": "CVE-2021-23369"
+                                "text": "CVE-2021-23369 - CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1440,14 +1440,14 @@
                         {
                             "id": "CVE-2021-23383",
                             "shortDescription": {
-                                "text": "CVE-2021-23383"
+                                "text": "CVE-2021-23383 - CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1618,14 +1618,14 @@
                         {
                             "id": "CVE-2020-28503",
                             "shortDescription": {
-                                "text": "CVE-2020-28503"
+                                "text": "CVE-2020-28503 - CRITICAL severity vulnerability in copy-props"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in copy-props"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package copy-props before 2.0.5 are vulnerable to Prototype Pollution via the main functionality. Recommended to upgrade to version 2.0.5. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1637,14 +1637,14 @@
                         {
                             "id": "CVE-2021-23438",
                             "shortDescription": {
-                                "text": "CVE-2021-23438"
+                                "text": "CVE-2021-23438 - CRITICAL severity vulnerability in mpath"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in mpath"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'"
+                                "markdown": "*This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input. Recommended to upgrade to version 65195b08111f516387f2ee4d13a70fadf7935d20. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1656,14 +1656,14 @@
                         {
                             "id": "CVE-2020-7769",
                             "shortDescription": {
-                                "text": "CVE-2020-7769"
+                                "text": "CVE-2020-7769 - CRITICAL severity vulnerability in Nodemailer"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Nodemailer"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'"
+                                "markdown": "*This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails. Recommended to upgrade to version v6.7.0. Fix in package file 'package.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1675,14 +1675,14 @@
                         {
                             "id": "CVE-2021-23440",
                             "shortDescription": {
-                                "text": "CVE-2021-23440"
+                                "text": "CVE-2021-23440 - CRITICAL severity vulnerability in set-value"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in set-value"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'"
+                                "markdown": "*This affects the package set-value before =3.0.0 <4.0.1. A type confusion vulnerability can lead to a bypass of CVE-2019-10747 when the user-provided keys used in the path parameter are arrays. Recommended to upgrade to version 4.1.0. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1694,14 +1694,14 @@
                         {
                             "id": "CVE-2020-7610",
                             "shortDescription": {
-                                "text": "CVE-2020-7610"
+                                "text": "CVE-2020-7610 - CRITICAL severity vulnerability in js-bson"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in js-bson"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'"
+                                "markdown": "*All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type. Recommended to upgrade to version 4.5.3. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1713,14 +1713,14 @@
                         {
                             "id": "CVE-2021-23369",
                             "shortDescription": {
-                                "text": "CVE-2021-23369"
+                                "text": "CVE-2021-23369 - CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
@@ -1732,14 +1732,14 @@
                         {
                             "id": "CVE-2021-23383",
                             "shortDescription": {
-                                "text": "CVE-2021-23383"
+                                "text": "CVE-2021-23383 - CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "fullDescription": {
                                 "text": "This file introduces a CRITICAL severity vulnerability in Handlebars.js"
                             },
                             "help": {
                                 "text": "",
-                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'"
+                                "markdown": "*The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source. Recommended to upgrade to version 4.7.7. Fix in package file 'package-lock.json'*"
                             },
                             "defaultConfiguration": {
                                 "level": "error"
