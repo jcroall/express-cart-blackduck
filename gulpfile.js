@@ -4,6 +4,7 @@ const cleanCSS = require('gulp-clean-css');
 const minify = require('gulp-minify');
 const rename = require('gulp-rename');
 
+
 function compressJS(){
     return src(['public/javascripts/*.js', '!public/javascripts/*.min.js'])
         .pipe(minify({
