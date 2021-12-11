@@ -36,7 +36,6 @@ jobs:
           echo test, and deploy your project.
           
       - name: PR Test
-        if: github_event_name == 'pull_request'
         run: |
           echo PR is ${{ github.event.issue.pull_request }}
 
