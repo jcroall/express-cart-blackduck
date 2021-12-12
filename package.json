@@ -18,7 +18,7 @@
   "dependencies": {
     "ajv": "^6.10.2",
     "async": "^2.6.3",
-    "axios": "^0.19.0",
+    "axios": "^0.24.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cheerio": "^0.22.0",
@@ -28,6 +28,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-session": "^1.17.0",
+    "getobject": "^0.1.0",
     "glob": "^7.1.5",
     "helmet": "^3.21.2",
     "html-entities": "^1.2.0",
@@ -48,7 +49,7 @@
     "rand-token": "^0.4.0",
     "rimraf": "^2.7.1",
     "sanitize-html": "^1.20.1",
-    "sitemap": "^1.6.0",
+    "sitemap": "^1.13.0",
     "strip-bom": "^3.0.0",
     "stripe": "^5.10.0",
     "uglifycss": "0.0.27"
